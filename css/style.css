@@ -1,0 +1,350 @@
+/* reset css */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0;font-family: 'heroregular', arial, sans-serif;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+body, *{line-height:1.2; }
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+table{border-collapse:collapse;border-spacing:0}
+html, html a {-webkit-font-smoothing: antialiased !important;}
+html {font-size:62.5%;}
+
+@font-face {
+    font-family: 'Intro';
+    src: url('fonts/intro.eot');
+    src: url('fonts/introd41d.eot?#iefix') format('embedded-opentype'),
+         url('fonts/intro.woff') format('woff'),
+         url('fonts/intro.ttf') format('truetype'),
+         url('fonts/intro.svg#intro_regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{overflow: hidden;}
+.fullHeight {
+  height:100%;
+  min-height:500px;
+  position:relative;
+  overflow:hidden;
+}
+
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #111;
+    border-radius: 0;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background: #3e4c5c;
+}
+
+
+/*************************
+******************** intro
+*************************/
+#asimov {
+  /*background: url(../images/intro-bg.jpg) center 0 no-repeat #000;
+  background-size:cover;*/
+  background:black;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  -webkit-animation: contrastIntro 10s infinite linear;
+  animation: contrastIntro 10s infinite linear;
+}
+
+/* header */
+#asimov header {
+  position: absolute;
+  top:50%;
+  margin:-105px auto 0;
+  left:0;
+  right:0;
+  color:#fff;
+  z-index: 21;
+}
+#asimov header h1 {
+  font-family: 'Intro';
+  font-size:12rem;
+  text-align: center;
+  line-height:8.6rem;
+  /*text-shadow:0 0 50px rgba(0,0,0,.10);*/
+}
+#asimov header h2 {
+  font-family: 'Intro';
+  text-align: center;
+  font-size: 2rem;
+  line-height:1.6rem;
+  /*text-shadow:0 0 50px rgba(0,0,0,.10);*/
+}
+
+
+
+/* stroke */
+#asimov .stroke {
+  width:360px;
+  height:2px;
+  background:#fff;
+  margin:40px auto;
+  position:relative;
+  opacity:0;
+
+  -webkit-transform:scaleX(0);
+  -moz-transform:scaleX(0);
+  -ms-transform:scaleX(0);
+  -o-transform:scaleX(0);
+  transform:scaleX(0);
+}
+#asimov .stroke:before,
+#asimov .stroke:after {
+  content:"";
+  width:10px;
+  height:10px;
+  background:url(../images/puce.png);
+  position:absolute;
+  top:-4px;
+  opacity:0;
+
+  -webkit-transform:scale(0);
+  -moz-transform:scale(0);
+  -ms-transform:scale(0);
+  -o-transform:scale(0);
+  transform:scale(0);
+}
+
+#asimov .stroke:before {left:-9px;}
+#asimov .stroke:after {right:-9px;}
+
+#asimov .stroke.anim {
+  transition:.75s;
+  opacity:1;
+
+  -webkit-transform:scaleX(1);
+  -moz-transform:scaleX(1);
+  -ms-transform:scaleX(1);
+  -o-transform:scaleX(1);
+  transform:scaleX(1);
+}
+
+#asimov .stroke.anim:before,
+#asimov .stroke.anim:after {
+  transition:.75s;
+  opacity:1;
+
+  -webkit-transform:scale(1);
+  -moz-transform:scale(1);
+  -ms-transform:scale(1);
+  -o-transform:scale(1);
+  transform:scale(1);
+}
+
+
+
+.scroll-stroke {
+  width:42px;
+  height:1px;
+  background:#3e4c5c;
+  position:absolute;
+  margin:auto;
+  left:0;right:0;
+
+  transition:.25s;
+}
+
+.scroll-stroke:nth-child(1) {top:10px;}
+.scroll-stroke:nth-child(2) {top:13px;}
+.scroll-stroke:nth-child(3) {top:16px;}
+.scroll-stroke:nth-child(4) {top:19px;}
+.scroll-stroke:nth-child(5) {top:23px;height:4px;}
+
+
+/* stroke */
+.stroke-law-1 {
+  width:100%;
+  height:74px;
+  position:absolute;
+  bottom:15%;
+}
+.stroke-law-1 > div {
+  width:300%;
+  height:74px;
+  position:absolute;
+  top:0;
+  left:-100%;
+}
+
+.stroke-law-1 .stroke-1 {background:url(../images/1-stroke-1.png) repeat-x top left;}
+.stroke-law-1 .stroke-2 {background:url(../images/1-stroke-2.png) repeat-x top left;}
+
+.stroke-law-1 .stroke-1 {
+  -webkit-animation:100s stroke-11 infinite linear;
+  -moz-animation:100s stroke-11 infinite linear;
+  -ms-animation:100s stroke-11 infinite linear;
+  -o-animation:100s stroke-11 infinite linear;
+  animation:100s stroke-11 infinite linear;
+}
+.stroke-law-1 .stroke-2 {
+  -webkit-animation:300s stroke-12 infinite linear;
+  -moz-animation:300s stroke-12 infinite linear;
+  -ms-animation:300s stroke-12 infinite linear;
+  -o-animation:300s stroke-12 infinite linear;
+  animation:300s stroke-12 infinite linear;
+}
+
+
+
+/**********************************************************
+
+M E N U
+
+***********************************************************/
+nav
+  {
+  position: absolute;
+  bottom: 0px;
+  z-index: 8888;
+  width: 100%;
+  text-align: center;
+  background-color: #000;
+  -webkit-transition: bottom 1s;
+  transition: bottom 1s;
+  }
+  
+nav.hidden { bottom: -50px; }
+nav.hidden a.responsive_ctrl { display: none; }
+nav.transparent { background: transparent; }
+  nav a.responsive_ctrl
+    {
+    display: none;
+    position: absolute;
+    top: -50px;
+    width: 100%;
+    height: 50px;
+    font-size: 2em;
+    line-height: 50px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    }
+  nav a.responsive_ctrl i
+    {
+    margin: 0 20px;
+    }
+  nav ul
+    {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    }
+    nav ul li
+      {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      }
+    nav ul li.closeNav { display: none; }
+    nav ul li.closeNav a { font-size: 4em; }
+      nav ul li a
+        {
+        display: block;
+        position: relative;
+        top: 0;
+        padding: 0 20px;
+        font-size: 1.5em;
+        font-weight: 600;
+        color: #fff;
+        letter-spacing: 2px;
+        line-height: 50px;
+        text-decoration: none;
+        text-transform: uppercase;
+        box-shadow: 0px 0px 0 0px rgba(255, 255, 255, 0.2) inset;
+        -webkit-transition: box-shadow .3s;
+        transition: box-shadow .3s;
+        }
+        nav ul li a:hover
+          {
+          box-shadow: 0px 5px 0 0px rgba(255, 0, 0, 1) inset;
+          }
+        nav ul li a.disablehover:hover { box-shadow: none; }
+        nav ul li a.selected { box-shadow: 0px -5px 0 0px #0059D3 inset; }
+        
+div.lang
+  {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  }
+  div.lang a
+    {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    padding: 0 5px;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #fff;
+    line-height: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-box-shadow: 0px 0px 0 0px rgba(255, 255, 255, 0.2) inset;
+    box-shadow: 0px 0px 0 0px rgba(255, 255, 255, 0.2) inset;
+    -webkit-transition: box-shadow .3s, color .5s;
+    transition: box-shadow .3s, color .5s;
+    }
+  div.lang a:hover { -webkit-box-shadow: 0px 5px 0 0px rgba(255, 255, 255, 1) inset; box-shadow: 0px 5px 0 0px rgba(255, 255, 255, 1) inset; }
+  div.lang a.selected { -webkit-box-shadow: 0px -5px 0 0px rgba(255, 255, 255, 1) inset; box-shadow: 0px -5px 0 0px rgba(255, 255, 255, 1) inset; }
+  
+nav.hidden div.lang { display: none; }
+  
+
+
+    
+@media screen and (max-width: 700px)
+  {
+    
+    nav { top: 100%; bottom: auto; height: 0%; background: rgba(0, 0, 0, 0.85); }
+    nav a.responsive_ctrl { display: block;  }
+    nav.transparent { background: inherit; }
+    nav.opened { top: 0; height: 100%; }
+    nav ul { display: none; }
+    nav.opened ul { display: block; }
+    nav ul li { display: block; }
+    nav ul li.closeNav { display: block; }
+    nav ul li a { font-size: 2em; }
+    nav ul li a:hover { box-shadow: none; }
+    nav ul li a.selected { box-shadow: none; -webkit-box-shadow: none; }  
+  }
+@media screen and (max-width: 280px)
+  {
+  nav a.responsive_ctrl { text-align: left; padding-left: 20px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;  }
+  }
+
+
+
+
+
+/* responsive */
+
+
+@media only screen and (max-width: 700px) {
+  #asimov header h1 {
+    font-size:4rem;
+    line-height:inherit;
+  }
+  .article-law h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  #asimov .stroke {
+    width:40%;
+  }
+  canvas {
+    display: none;
+  }
+}
+
