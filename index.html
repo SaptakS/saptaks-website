@@ -1,63 +1,436 @@
-<!DOCTYPE HTML>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-	
-<!-- Mirrored from www.davidecantelli.it/EN/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Nov 2014 10:16:28 GMT -->
-	<head>
-	    <title>Saptak Sengupta</title>
-	    <meta charset="utf-8" />
-	    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
-	    <meta name="description" content="Portfolio website of Saptak Sengupta" />
-	      <!--<link rel="stylesheet" type="text/css" href="css/screen.css" media="screen" />-->
-	    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
-	 	<script src="js/jquery-1.9.1.js"></script>
-       
-   
-	</head>   
-	<body>
-		
-		<nav class="hidden">
-			<a class="responsive_ctrl">Menu</a>
-			<ul>
-				<!--
-				<li><a href="#home">Home</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#contact">Contact</a></li>-->
-				<li><a href="https://www.facebook.com/s4p74k.s3ngup74" target="_blank"><img src="image/fb.png" width="25px"/></a></li>
-				<li><a href="mailto:saptak013@gmail.com" target="_blank"><img src="image/email.png"  width="25px"/></a></li>
-				<li><a href="https://github.com/saptaks" target="_blank"><img src="image/github.png"  width="25px"/></a></li>
-				<li><a href="https://www.linkedin.com/in/saptaks" target="_blank"><img src="image/linkedin.png" width="25px"/></a></li>
-				<li class="closeNav"><a href="#">X</a></li>
-			</ul>			
-		</nav>
-		<div id="loader"></div>
-		
-		<div class="content">
-        <!-- asimov -->
-	        <section id="asimov" class="fullHeight not-ready">
-	            <script src="js/main-canvas.js"></script>
-	            <canvas id="pixelCanvas" width="1500" height="1050" style="margin-left:-102px;margin-top:-102px;" ></canvas>
-	            <!--<canvas id="particles"></canvas>-->
-	            <header>
-	                <h1 data-title="Saptak Sengupta"><!-- Asimov --></h1>
-	                <div class="stroke"></div>
-	                <h2 data-title="Student and Developer"><!-- 1920 - 1992 --></h2>
-	            </header>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="theme-color" content="#2196F3">
+    <title>Saptak Sengupta</title>
 
-	            
-	        </section>
+    <!-- CSS  -->
+    <link href="min/plugin-min.css" type="text/css" rel="stylesheet">
+    <link href="min/custom-min.css" type="text/css" rel="stylesheet" >
+    <link href="css/style.css" type="text/css" rel="stylesheet" >
+    <link href="css/chart.scss" type="text/css" rel="stylesheet" >
+</head>
+<body id="top" class="scrollspy">
 
-	    </div>
+<!-- Pre Loader -->
+<div id="loader-wrapper">
+    <div id="loader"></div>
+ 
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+ 
+</div>
+
+<!--Navigation-->
+ <div class="navbar-fixed">
+    <nav id="nav_f" class="default_color" role="navigation">
+        <div class="container">
+            <div class="nav-wrapper">
+            <a href="#" id="logo-container" class="brand-logo">Saptak Sengupta</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#intro">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#expertise">Expertise</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <ul id="nav-mobile" class="side-nav">
+                    <li><a href="#intro">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#expertise">Expertise</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!--Hero-->
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/main-canvas.js"></script>
+        <canvas id="pixelCanvas" width="1500" height="1050" style="position:absolute;margin-left:-27rem;margin-top:-25rem;" ></canvas>
+        <h1 class="text_h center header cd-headline letters type">
+            <span style="position:relative;">I Love</span> 
+            <span class="cd-words-wrapper waiting">
+                <b class="is-visible">Web Development</b>
+                <b>Material Design</b>
+                <b>Python</b>
+                <b>Javascript</b>
+                <b>Technology</b>
+            </span>
+        </h1>
+    </div>
+</div>
+
+<!--Intro and service-->
+<div id="intro" class="section scrollspy">
+    <div class="container">
+        <h2 class="header text_b">About Me </h2>
+        <div class="row">
+            <div  class="col s12">                
+                <h4 class="center header text_h2">I am a B.Tech student of Information Technology who loves software and web-app developments. I am a huge Open Source Enthusiast and love to contribute in open source project. I like to find solutions to real life problem using technology</h4>
+                
+            </div>
+            <div class="col s12">
+                <div class="center">
+                    <a href="https://github.com/saptaks" class="black btn waves-effect waves-light" target="_blank">Github</a>
+                    <a href="https://in.linkedin.com/in/saptaks" class="black btn waves-effect waves-light" target="_blank">LinkedIn</a>
+                    <!--<a href="https://github.com/saptaks" class="black btn waves-effect waves-light" target="_blank">Resume</a>-->
+                </div>
+            </div>
+
+            <div  class="col s12 m4 l4">
+                <div class="center promo promo-example">
+                    <i class="mdi-image-flash-on"></i>
+                    <h5 class="promo-caption">Learn New Things</h5>
+                    <p class="light center">I am always enthusiastic to learn about new technologies and venture into various areas which I haven't explored before.</p>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="center promo promo-example">
+                    <i class="mdi-social-group"></i>
+                    <h5 class="promo-caption">Collaborate</h5>
+                    <p class="light center">Collaborating and contributing has been my passion ever since I came across FOSS and it is a thing I believe in most right now.</p>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="center promo promo-example">
+                    <i class="mdi-hardware-desktop-windows"></i>
+                    <h5 class="promo-caption">Make Cool Stuffs</h5>
+                    <p class="light center">I love development and am always trying to make new web apps or softwares with improved UI/UX and enhanced features.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Work-->
+<div class="section scrollspy" id="work">
+    <div class="container">
+        <h2 class="header text_b">Work </h2>
+        <div class="row">
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/opinator.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Opinator<i class="mdi-navigation-more-vert right"></i></span>
+                        <p><a href="https://github.com/SaptakS/opinator">Project link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Opinator<i class="mdi-navigation-close right"></i></span>
+                        <p>It is a browser extension which can be used to get a better insight about products in ecommerce website from product reviews. </p>
+                        <b>Technologies Used: </b>
+                        <ul>
+                            <li>Natural Language Processing</li>
+                            <li>Javascript for Browser Extensions</li>
+                            <li>Scrapy for web scraping</li>
+                            <li>Flask for web server</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/seo.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">SEO Wizzard<i class="mdi-navigation-more-vert right"></i></span>
+                        <p><a href="https://chrome.google.com/webstore/detail/seo-wizard/nfcpfnfifibiifkdglmoaikikfelkppl?hl=en">Project link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">SEO Wizzard<i class="mdi-navigation-close right"></i></span>
+                        <p>Chrome Extension to check the errors in the SEO features of a website and help to suggest features to improve the SEO of the website. It checks the various meta tags, broken links, image links, website age, alexa rank and many other features. It also has a desktop notification feature.</p>
+                        <b>Technologies Used: </b>
+                        <ul>
+                            <li>Javascript</li>
+                            <li>Chrome functions and features</li>
+                            <li>PHP for backend codes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/effe.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Effervescence<i class="mdi-navigation-more-vert right"></i></span>
+                        <p><a href="https://effervescence.iiita.ac.in/">Project link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Effervescence<i class="mdi-navigation-close right"></i></span>
+                        <p>Effervescence is the cultural fest of Indian Institute of Information Technology, Allahabad. The fest has a website with all the list of events, contact details of various organisers and lot more. It also has a login-registration system along with a dashboard feature.<br> The entire backend of the project is written in Object Oriented PHP to make the modules reusable and easily understandable.</p>
+                        <b>Technologies Used: </b>
+                        <ul>
+                            <li>HTML, CSS and Javascript libraries for Frontend</li>
+                            <li>PHP for Backend</li>
+                            <li>MySQL for Database</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/aparoksha.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Aparoksha<i class="mdi-navigation-more-vert right"></i></span>
+                        <p><a href="https://aparoksha.iiita.ac.in/">Project link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Aparoksha<i class="mdi-navigation-close right"></i></span>
+                        <p>Aparoksha is the technical fest of Indian Institute of Information Technology, Allahabad. The fest has a website with all the list of events, contact details of various organisers and lot more. It also has a login-registration system along with a dashboard feature.<br> The entire backend of the project is written in Object Oriented PHP to make the modules reusable and easily understandable.</p>
+                        <b>Technologies Used: </b>
+                        <ul>
+                            <li>HTML, CSS and Javascript libraries for Frontend</li>
+                            <li>PHP for Backend</li>
+                            <li>MySQL for Database</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/qyuki.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Marketing ROI - Qyuki<i class="mdi-navigation-more-vert right"></i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Marketing ROI - Qyuki<i class="mdi-navigation-close right"></i></span>
+                        <p>It is a web application used to calculate the marketing ROI of a particular Youtube channel on the basis of data from Youtube API and Google Adsense API.</p>
+                        <b>Technologies Used: </b>
+                        <ul>
+                            <li>Semantic UI framework for Frontend</li>
+                            <li>Django Framework for backend</li>
+                            <li>PostgreSQL for Database</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/foss.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Open Source Projects<i class="mdi-navigation-more-vert right"></i></span>
+                        <p><a href="https://github.com/SaptakS">Project link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Open Source Projects<i class="mdi-navigation-close right"></i></span>
+                        <p>Made various small scale open source projects for various institute courses such as Chat Client using JAVA, NLP Algorithms webapp and many more. Some fun projects such as MangaExtractor, Keylogger with Python, etc. Also, contributed to many open source projects such as Sizzle by JQuery, Open Event by FOSSASIA, Boomerang by GDG[X], etc.</p>
+                        <b>Technologies Used: </b>
+                        <ul>
+                            <li>Python</li>
+                            <li>Javascript</li>
+                            <li>MySQL for Database</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Parallax
+<div class="parallax-container">
+    <div class="parallax"><img src="img/parallax1.png"></div>
+</div>
+
+<!--expertise-->
+<div class="section scrollspy" id="expertise">
+    <div class="container">
+        <h2 class="header text_b"> Expertise </h2>
+        <div class="row">
+            <div class="col s12 m3">
+                <div class="card card-avatar">
+                    <div class="waves-effect waves-block waves-light">
+                        <div class="donut-chart chart htmlcss">
+                            <div class="slice one"></div>
+                            <div class="slice two"></div>
+                            <div class="chart-center">
+                              <span>90%</span>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">HTML & CSS<br/>
+                        </span>                        
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m3">
+                <div class="card card-avatar">
+                    <div class="waves-effect waves-block waves-light">
+                          <div class="donut-chart chart js">
+                            <div class="slice one"></div>
+                            <div class="slice two"></div>
+                            <div class="chart-center">
+                              <span>95%</span>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Javascript<br/> 
+                        </span>                        
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m3">
+                <div class="card card-avatar">
+                    <div class="waves-effect waves-block waves-light">
+                          <div class="donut-chart chart python">
+                            <div class="slice one"></div>
+                            <div class="slice two"></div>
+                            <div class="chart-center">
+                              <span>90%</span>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">                 Python<br/></span>                        
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m3">
+                <div class="card card-avatar">
+                    <div class="waves-effect waves-block waves-light">
+                          <div class="donut-chart chart software">
+                            <div class="slice one"></div>
+                            <div class="slice two"></div>
+                            <div class="chart-center">
+                              <span>85%</span>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">                 Software Architecture<br/></span>                        
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m3">
+                <div class="card card-avatar">
+                    <div class="waves-effect waves-block waves-light">
+                          <div class="donut-chart chart webapp">
+                            <div class="slice one"></div>
+                            <div class="slice two"></div>
+                            <div class="chart-center">
+                              <span>90%</span>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">                 Web App Development<br/></span>                        
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m3">
+                <div class="card card-avatar">
+                    <div class="waves-effect waves-block waves-light">
+                          <div class="donut-chart chart ce">
+                            <div class="slice one"></div>
+                            <div class="slice two"></div>
+                            <div class="chart-center">
+                              <span>90%</span>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">                 Chrome Extension<br/></span>                        
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m3">
+                <div class="card card-avatar">
+                    <div class="waves-effect waves-block waves-light">
+                          <div class="donut-chart chart comm">
+                            <div class="slice one"></div>
+                            <div class="slice two"></div>
+                            <div class="chart-center">
+                              <span>85%</span>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">                 Communication Skills<br/></span>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Footer-->
+<footer id="contact" class="page-footer default_color scrollspy">
+    <div class="container">  
+        <div class="row">
+            <div class="col l5 s12">
+                <h5 class="white-text">Contact Details</h5>
+                <form class="col s12" action="contact.php" method="post">
+                    <div class="row">
+                        <div class="col s12">
+                            Email: saptak013@gmail.com
+                        </div>
+                        <div class="col s12">
+                            Phone: +91-8953346034/9748368303
+                        </div>
+                        <div class="col s12">
+                            Skype: saptak013
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text"></h5>
+                <ul>
+                    <li><a class="white-text" href="http://www.joashpereira.com/">Home</a></li>
+                    <li><a class="white-text" href="http://www.joashpereira.com/blog">Blog</a></li>
+                </ul>
+            </div>
+            <div class="col l4 s12">
+                <h5 class="white-text">Social</h5>
+                <ul>
+                    <li style="float:left;padding-left:1.2rem;">
+                        <a class="white-text" href="https://www.behance.net/joashp">
+                            <i class="small fa fa-twitter-square white-text"></i> 
+                        </a>
+                    </li>
+                    <li style="float:left;padding-left:1.2rem;">
+                        <a class="white-text" href="https://www.facebook.com/joash.c.pereira">
+                            <i class="small fa fa-facebook-square white-text"></i>
+                        </a>
+                    </li>
+                    <li style="float:left;padding-left:1.2rem;">
+                        <a class="white-text" href="https://github.com/joashp">
+                            <i class="small fa fa-github-square white-text"></i>
+                        </a>
+                    </li>
+                    <li style="float:left;padding-left:1.2rem;">
+                        <a class="white-text" href="https://www.linkedin.com/in/joashp">
+                            <i class="small fa fa-linkedin-square white-text"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>    
+</footer>
+
+
+    <!--  Scripts-->
+    <script src="min/plugin-min.js"></script>
+    <script src="min/custom-min.js"></script>
+
     </body>
-
-<script src="js/jquery.shuffleLetters.js" type="text/javascript"></script>
-<script src="js/main.js" type="text/javascript"></script>
-<script>
-	$(document).ready(function(){
-		$('nav').removeClass('hidden');    		
-		animIntroduction();
-		responsiveNav();
-	});
-</script>
-    
 </html>

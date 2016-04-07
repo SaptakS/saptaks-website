@@ -80,7 +80,7 @@ $(document).ready(function(){
 	blocksSequence = new Array;
 	targetColour = new Colour(255, 0, 0);
 	colToUse = new Colour(222, 222, 222);
-	baseColour = new Colour( 10, 10, 10 );
+	baseColour = new Colour( 18, 108, 180 );
 	spirals = Array();
 	lastX = -1; // Last hit coords
 	lastY = -1;
