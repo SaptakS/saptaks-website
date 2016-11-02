@@ -1,0 +1,151 @@
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux (vers 25 March 2009), see www.w3.org" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Release Widget</title><!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <!-- Custom CSS -->
+  <link href="css/release.css" rel="stylesheet" type="text/css" />
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <!-- Page Content -->
+
+  <div class="container1">
+    <div class="overall">
+      
+
+      <div class="images-container col-md-2 col-sm-2">
+        <div class="images">
+          <div class="rocket naoTooltip-wrap">
+            <a class="milestone milestone-final"></a>
+             
+          </div>
+          <div class="i6 naoTooltip-wrap">
+            <a class="milestone milestone-freeze"></a>
+
+            <div class="naoTooltip nt-right nt-small">
+              Final freeze 2016-05-31
+            </div>
+          </div>
+
+          <div class="i5 naoTooltip-wrap">
+            <a class="milestone milestone-release"></a>
+
+            <div class="naoTooltip nt-right nt-small">
+              Beta release 2016-05-10
+            </div>
+          </div>
+
+          <div class="i4 naoTooltip-wrap">
+            <a class="milestone milestone-freeze"></a>
+
+            <div class="naoTooltip nt-right nt-small">
+              Beta freeze 2016-04-19
+            </div>
+          </div>
+
+          <div class="i3 naoTooltip-wrap">
+            <a class="milestone milestone-release active" ></a>
+
+            <div class="naoTooltip nt-right nt-small">
+              Alpha release 2016-03-29
+            </div>
+          </div>
+
+          <div class="i2 naoTooltip-wrap">
+            <a class="milestone milestone-freeze active" ></a>
+
+            <div class="naoTooltip nt-right nt-small">
+              Alpha freeze 2016-03-08
+            </div>
+          </div>
+
+          <div class="i1 naoTooltip-wrap">
+            <a class="milestone milestone-branch active" ></a>
+
+            <div class="naoTooltip nt-right nt-small">
+              Fedora 24 Branch 2016-02-23
+            </div>
+          </div>
+        </div>
+
+        <div class="thermometer mycontainer2" data-percent="43" data-orientation=
+        "vertical">
+          <div class="thermometer-outer thermometer-outer-v">
+            <div class="thermometer-inner thermometer-inner-v"></div>
+          </div>
+        </div><!--
+                <div class="mycontainer">
+                    &nbsp;
+                </div> -->
+      </div>
+      <div class="col-md-5 col-sm-5">
+        <div class="row milestone-label final">
+          <span>Fedora Release 24</span>
+        </div>
+        <div class="row milestone-label">
+          <span>Final freeze 2016-05-31</span>
+        </div>
+        <div class="row milestone-label">
+          <span>Beta release 2016-05-10</span>
+        </div>
+        <div class="row milestone-label">
+          <span>Beta freeze 2016-04-19</span>
+        </div>
+        <div class="row milestone-label">
+          <span>Alpha release 2016-03-29</span>
+        </div>
+        <div class="row milestone-label">
+          <span>Alpha freeze 2016-03-08</span>
+        </div>
+        <div class="row milestone-label">
+          <span>Fedora 24 Branch 2016-02-23</span>
+        </div>
+      </div>
+    </div>
+  </div><!-- /.container -->
+  <!-- jQuery -->
+  <script src="js/jquery.js" type="text/javascript">
+</script><!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js" type="text/javascript">
+</script><script src="js/jquery.thermometer.js" type="text/javascript">
+</script><script type="text/javascript">
+//<![CDATA[
+        $('.thermometer').thermometer({}, function() {
+                $(".rocket .milestone").addClass("selected");
+                $(".rocket .desc3").css({"font-weight": "bold"});                
+        });
+        /*
+        $(".milestone").mouseenter(function() {
+            var selected = this;
+            $(".milestone").each(function(){
+                if (selected != this) {
+                    $(this).css({"opacity": "0.4"});
+                }
+            });
+            $(".thermometer").css({"opacity":"0.4"});
+        }).mouseleave(function() {
+            $(".milestone").each(function(){
+                    $(this).css({"opacity": "1"});              
+            });
+            $(".thermometer").css({"opacity":"1"});
+        });*/
+  //]]>
+  </script>
+</body>
+</html>
+

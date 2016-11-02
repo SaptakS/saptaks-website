@@ -1,0 +1,243 @@
+.thermometer-outer {
+  background: #e7e8e9;
+  border-radius: 3px;
+  height: 100%;
+}
+
+.thermometer-outer-v {
+  height: 100%;
+  width: auto;
+}
+
+.thermometer-inner {
+  background: #3c6eb4;
+}
+
+.thermometer-inner-v {
+  width: 100%;
+}
+
+.milestone {
+    transition: all 0.2s ease-in-out;
+}
+
+a.milestone {
+  width: 7.35rem;
+  height: 7.5rem;
+  margin: 0 auto;
+}
+
+a.milestone.milestone-release.active {
+  background:url('../circle5.png');
+}
+
+a.milestone.milestone-freeze.active {
+  background:url('../circle4.png');
+}
+
+a.milestone.milestone-branch.active {
+  background:url('../circle1.png');
+}
+
+a.milestone.milestone-final.active {
+  width:10rem;
+  background:url('../circle7.png');
+}
+
+a.milestone.milestone-release {
+  background:url('../circle5-inactive.png');
+}
+
+a.milestone.milestone-freeze {
+  background:url('../circle4-inactive.png');
+}
+
+a.milestone.milestone-branch {
+  background:url('../circle1-inactive.png');
+}
+
+a.milestone.milestone-final {
+  width:10rem;
+  background:url('../circle7-inactive.png');
+}
+
+.milestone-label {
+  height:9.5rem;
+  padding-top: 3.75rem;
+  font-size: 1.8rem;
+  font-family: monospace;
+  color: #595a5c;
+}
+
+.milestone-label.final {
+  height:7.5rem;
+}
+
+.mycontainer2 {
+    width: 10%;
+    position: absolute;
+    top: 0;
+    left: 45%;
+    z-index: -1;
+    height: 100%;
+}
+
+.container1 {
+    display: flex;
+    width: auto;
+    margin: 0 auto;
+}
+
+.rocket {
+    background: #e7e8e9;
+}
+
+.desc2 {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 15em;
+    height: 100%;
+    background: #e7e8e9;
+    transition: all 2s ease-in-out;    
+}
+
+.desc3 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 1em;
+}
+
+.rocket {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.overall {
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
+.images-container {
+    /*border: 2px solid green;*/
+    position: relative;
+    width: auto;
+    margin: 0 auto;
+}
+
+.images {
+    width: 100%;
+    padding: 0;
+    height: auto;
+    margin: 0 auto;
+}
+
+.naoTooltip {
+  opacity: 0;
+  background-color: #000000;
+  border-radius: 4px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 13px;
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+  visibility: hidden;
+  width: 500px; /* Set the width to the largest option */
+  z-index: 999;
+}
+
+.naoTooltip.nt-right:before,
+.naoTooltip.nt-right-bottom:before,
+.naoTooltip.nt-right-top:before {
+  border-color: transparent #000000 transparent transparent;
+  border-width: 8px 8px 8px 0;
+  left: -8px;
+  right: auto;
+  top: calc(50% - 8px);
+}
+
+.naoTooltip-wrap {
+    cursor: auto !important;
+    display: flex !important; 
+}
+
+.mycontainer {
+    background-color: gray;
+    /*border: 1px solid red;*/
+    width: 10%;
+    position: absolute;
+    top: 0;
+    left: 45%;
+    z-index: -1;
+    height: 100%;
+}
+
+.i1, .i2, .i3, .i4, .i5, .i6 {
+    display: flex;
+    margin: auto;
+    /*border: 2px dotted gray;*/
+}
+
+.desc {
+    position: absolute;
+    width: 20em;
+    display: none;
+}
+
+.milestone:hover + span {
+    display: inline;
+}
+
+.images img {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.images .i5 {
+    padding-top: 3vh;
+}
+
+.images .i6 {
+    padding-top: 3vh;
+}
+
+.images .i1 {
+    padding-top: 3vh;
+}
+
+.images .i2 {
+    padding-top: 3vh;
+}
+
+.images .i3 {
+    padding-top: 3vh;
+}
+
+.images .i4 {
+    padding-top: 3vh;
+}
+
+.rocket .selected {
+    background: red;
+    transition: all 0.5s ease-in-out;
+}
+
+.images .selected {
+    width: 70%;
+}
+
+body {
+   font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    /*border: 3px solid blue;*/
+}
