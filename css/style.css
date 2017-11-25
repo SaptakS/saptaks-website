@@ -13,6 +13,12 @@
     padding: 0 15px;
 }
 
+.card .card-image img {
+    width: auto;
+    max-width: 50%;
+    margin: auto;
+}
+
 #intro, #project, #team {padding-top: 4rem;}
 
 
