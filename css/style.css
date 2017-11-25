@@ -13,7 +13,7 @@
     padding: 0 15px;
 }
 
-#intro, #work, #team {padding-top: 4rem;}
+#intro, #project, #team {padding-top: 4rem;}
 
 
 #index-banner {
@@ -63,7 +63,7 @@
 
 .card-content a:hover {color: #000000;}
 
-#work, #team{background: rgb(247, 247, 247);}
+#project, #team{background: rgb(247, 247, 247);}
 
 .text_pink{color:#EF9A9A;}
 
