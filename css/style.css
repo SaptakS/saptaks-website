@@ -19,6 +19,10 @@
     margin: auto;
 }
 
+.card-content .card-title img {
+    width: 75%;
+}
+
 #intro, #project, #team {padding-top: 4rem;}
 
 
