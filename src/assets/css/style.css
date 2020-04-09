@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf");
+  src: url("../fonts/Roboto_Condensed/RobotoCondensed-Regular.otf") format("opentype"), url("../fonts/Roboto_Condensed/RobotoCondensed-Regular.woff") format("woff"), url("../fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf");
+  src: url("../fonts/Roboto_Condensed/RobotoCondensed-Bold.otf") format("opentype"), url("../fonts/Roboto_Condensed/RobotoCondensed-Bold.woff") format("woff"), url("../fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: "Aileron";
+  src: url("../fonts/aileron.regular.ttf");
+  src: url("../fonts/aileron.regular.otf") format("opentype"), url("../fonts/aileron.regular.woff") format("woff"), url("../fonts/aileron.regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: "Aileron";
+  src: url("../fonts/aileron.bold.ttf");
+  src: url("../fonts/aileron.bold.otf") format("opentype"), url("../fonts/aileron.bold.woff") format("woff"), url("../fonts/aileron.bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: "Arimo";
+  src: url("../fonts/Arimo/Arimo-Regular.ttf");
+  src: url("../fonts/Arimo/Arimo-Regular.otf") format("opentype"), url("../fonts/Arimo/Arimo-Regular.woff") format("woff"), url("../fonts/Arimo/Arimo-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #303030;
+  margin: 0; }
+
+h1 {
+  font-size: 5rem; }
+
+h2 {
+  font-size: 3rem; }
+
+h3 {
+  font-size: 2.25rem; }
+
+h4 {
+  font-size: 2rem;
+  color: #f85e23; }
+
+h5 {
+  font-size: 1.33rem;
+  color: #a8d4ad; }
+
+h6 {
+  font-size: 1rem; }
+
+p {
+  font-family: "Aileron", sans-serif;
+  font-size: 1.25rem; }
+
+.secondary-text {
+  color: #737373; }
+
+.upper-case {
+  text-transform: uppercase; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.flex {
+  display: flex; }
+
+.containers {
+  padding: 3rem 0;
+  background: #ffffff;
+  color: #303030; }
+  .containers.container-light {
+    background: #d4ddd5;
+    color: #000000; }
+  .containers.container-dark {
+    background: #303030;
+    color: #d4ddd5; }
+  .containers .content-wrapper {
+    margin: 0 auto;
+    max-width: 75%; }
+
+.text-center {
+  text-align: center; }
+
+.hidden {
+  display: none; }
+
+.content-wrapper img {
+  max-width: 200px; }
+
+.ratings {
+  display: flex; }
+  .ratings span {
+    width: 5px;
+    height: 2px; }
+    .ratings span .filled {
+      background-color: #303030; }
+    .ratings span .empty {
+      background-color: #d4ddd5;
+      border: #303030 1px solid; }
+
+/*# sourceMappingURL=style.css.map */
