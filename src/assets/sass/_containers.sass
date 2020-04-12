@@ -5,11 +5,13 @@ body
 .flex
     display: flex
 
-
 .containers
     padding: $padding-lg 0
     background: $white
     color: $dark-gray
+
+    &.intro
+        padding: $padding-lg * 1.25 0
 
     &.container-light
         background: $light-gray
@@ -17,9 +19,17 @@ body
     &.container-dark
         background: $dark-gray
         color: $light-gray
+
+        a
+            color: $white
+
     .content-wrapper
         margin: 0 auto
         max-width: 75%
+
+footer.containers
+    padding-bottom: $padding-base
+    padding-top: 0
 
 .text-center
     text-align: center
