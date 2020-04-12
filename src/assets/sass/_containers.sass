@@ -30,11 +30,6 @@ body
         margin: 0 auto
         max-width: 75%
 
-.shape-outside-left
-    float: left
-    shape-outside: url(/assets/images/about.png)
-    width: 500px
-
 footer.containers
     padding-bottom: $padding-base
     padding-top: 0
@@ -44,3 +39,16 @@ footer.containers
 
 .hidden
     display: none
+
+@media (max-width: 720px) 
+    html
+        font-size: 12px
+
+    .flex
+        display: block
+
+@media (min-width: 900px)
+    .shape-outside-left
+        float: left
+        shape-outside: url(/assets/images/about.png)
+        width: 500px
