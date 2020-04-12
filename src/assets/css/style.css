@@ -80,6 +80,8 @@ body {
   padding: 3rem 0;
   background: #ffffff;
   color: #303030; }
+  .containers h4 {
+    margin-bottom: 4rem; }
   .containers.intro {
     padding: 3.75rem 0; }
   .containers.container-light {
@@ -93,6 +95,11 @@ body {
   .containers .content-wrapper {
     margin: 0 auto;
     max-width: 75%; }
+
+.shape-outside-left {
+  float: left;
+  shape-outside: url(/assets/images/about.png);
+  width: 500px; }
 
 footer.containers {
   padding-bottom: 1.5rem;
@@ -151,7 +158,10 @@ header {
 
 #curveDownColor {
   margin-bottom: -2.5em; }
-  #curveDownColor path {
+  #curveDownColor path.dark {
+    fill: #303030;
+    color: #303030; }
+  #curveDownColor path.light {
     fill: #ffffff;
     color: #ffffff; }
 
