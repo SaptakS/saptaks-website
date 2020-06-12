@@ -1,6 +1,9 @@
 body
     margin: 0
     padding: 0
+    min-height: 100vh
+    display: flex
+    flex-direction: column
 
 .flex
     display: flex
@@ -30,9 +33,13 @@ body
         margin: 0 auto
         max-width: 75%
 
+        @media (min-width: 1900px)
+            max-width: 60%
+
 footer.containers
     padding-bottom: $padding-base
     padding-top: 0
+    margin-top: auto
 
 .text-center
     text-align: center
