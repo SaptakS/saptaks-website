@@ -2,40 +2,40 @@
 {% block content %}
 <div class="intro containers container-light">
   <div class="flex content-wrapper">
-    <div class="content-wrapper">
+    <picture class="content-wrapper" aria-hidden="true">
+      <source srcset="/assets/images/profile.png" media="(min-width: 800px)">
       <img src="assets/images/profile.png" />
-    </div>
-    <div class="content-wrapper">
+    </picture>
+    <section class="content-wrapper">
       <h1 class="upper-case">Saptak Sengupta</h1>
       <h2 class="secondary-text upper-case">Web Developer</h2>
       <p>
-        saptak013 [at] gmail [dot] com |
+        <a href="mailto:mail@saptaks.website">mail [at] saptaks [dot] website</a> |
         <a href="https://github.com/saptaks">Github</a> |
         <a href="https://linkedin.com/in/saptaks"> LinkedIn</a> |
         <a href="https://twitter.com/Saptak013"> Twitter</a>
       </p>
-    </div>
+    </section>
   </div>
 </div>
-<svg id="bigTriangleShadow" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+<svg aria-hidden="true" id="bigTriangleShadow" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
   <path id="trianglePath1" d="M0 0 L50 100 L100 0 Z"></path>
   <path id="trianglePath2" d="M50 100 L100 40 L100 0 Z"></path>
 </svg>
 <div class="containers" id="iamspiderman">
-
   <h4 class="text-center">Who am I?</h4>
-  <div class="content-wrapper">
-    <div class="shape-outside-left">
-      <img src="assets/images/about.png"/>
-    </div>
+  <section class="content-wrapper">
+    <picture class="shape-outside-left">
+      <source srcset="/assets/images/about.png" media="(min-width: 800px)">
+      <img src="assets/images/about.png" alt="Saptak's work is an amalgamation of Open Source, Web Development and Community"/>
+    </picture>
     <p>
-      Hi, I am Saptak S. <br/>
-      I'm a <b>Freelance Web Developer (Frontend & Backend)</b>.
+      Hi, I am <a href="https://github.com/saptaks">Saptak S</a>. <br/>
+      I'm a <b>Inclusive Web Developer (Frontend & Backend)</b>.
     </p>
     <p>
       I am currently working as a contractor with 
-      <a href="https://freedom.press">Freedom of the Press Foundation</a> and 
-      <a href="https://weblate.org">Weblate</a>.
+      <a href="https://freedom.press">Freedom of the Press Foundation</a>.
       I have been an active contributor and maintainer in various different 
       Open Source projects and organisations. 
       <a href="https://ooni.org">OONI</a>, 
@@ -46,13 +46,14 @@
       <a href="http://fossasia.org/">FOSSASIA</a>,
       <a href="https://jquery.org">jQuery</a>,
       <a href="https://securedrop.org">Securedrop</a>,
-      <a href="https://wagtail.io">Wagtail</a> to name a few.
+      <a href="https://wagtail.io">Wagtail</a>,
+      <a href="https://weblate.org">Weblate</a> to name a few.
     </p>
     <p>
       You can probably find me in various different conferences all over the world. Sometimes I give
       talks and write blogs about things I have recently worked on or tips that have helped me.
     </p>
-  </div>
+  </section>
   <div style="clear: both;"></div> 
 </div>
 {% endblock %}

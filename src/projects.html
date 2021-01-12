@@ -1,21 +1,25 @@
 {% extends "_base.html" %}
+{% block header_text %}
+<a href="/">
+  <h2>Saptak Sengupta</h2>
+</a>
+{% endblock %}
 {% block content %}
-
 <svg 
-  id="bigTriangleShadow" 
-  xmlns="http://www.w3.org/2000/svg" 
-  style="background: #303030; margin-bottom: -4px;"
+  id="bigTriangleShadow"
+  aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
   version="1.1" width="100%" height="100" 
   viewBox="0 0 100 100" preserveAspectRatio="none">
   <path id="trianglePath1" d="M0 0 L50 100 L100 0 Z"></path>
   <path id="trianglePath2" d="M50 100 L100 40 L100 0 Z"></path>
 </svg>
-<div class="containers container-dark">
-  <div class="content-wrapper">
+<div class="containers">
+  <section class="content-wrapper">
     <h4 class="text-center">
       Projects
     </h4>
-    <div class="project-content">
+    <article class="project-content">
       <h5>Onionshare</h5>
       <p>
         <a href="https://onionshare.org">OnionShare</a> is an open source tool that lets you securely and 
@@ -23,8 +27,18 @@
         adding and maintaining different features of OnionShare. working
         in Flask and PyQT.
       </p>
-    </div>
-    <div class="project-content">
+    </article>
+    <article class="project-content">
+      <h5>The A11Y Project</h5>
+      <p>
+        <a href="https://a11yproject.com">The A11Y Project</a> is a website catered towards various contents
+        and resources related to web accessibility. "Accessibility is incredibly important, yet often
+        overlooked in traditional digital design and development education. Because of this,
+        The A11Y Project strives to be a living example of how to create beautiful, accessible, and
+        inclusive digital experiences."
+      </p>
+    </article>
+    <article class="project-content">
       <h5>OONI</h5>
       <p>
         <a href="https://ooni.org">Open Observatory of Network Interference (OONI)</a> is a
@@ -33,8 +47,8 @@
         in the main website, while also working on <a href="https://explorer.ooni.org/">OONI Explorer</a>
         to implement different features
       </p>
-    </div>
-    <div class="project-content">
+    </article>
+    <article class="project-content">
       <h5>Weblate</h5>
       <p>
         <a href="https://weblate.org">Weblate</a> is a web-based continuous localization
@@ -42,8 +56,8 @@
         along with the team to improve frontend implementations and also improve API works. 
         Most of the work involves Django and jQuery
       </p>
-    </div>
-    <div class="project-content">
+    </article>
+    <article class="project-content">
       <h5>Bomkesh</h5>
       <p>
         <a href="https://github.com/kushaldas/bomkesh">Bomkesh</a> is a tool to monitor and block your mobile
@@ -51,8 +65,8 @@
         for users to monitor their mobile network traffic better to see which all network
         interactions are happening even when phone not in use. Working mostly in Python and Flask
       </p>
-    </div>
-    <div class="project-content">
+    </article>
+    <article class="project-content">
       <h5>OTF Result & Impact</h5>
       <p>
         Worked with the <a href="https://ura.design">Ura Design Team</a> to implement the result and impacts page for 
@@ -60,8 +74,18 @@
         using just HTML & CSS along with making it responsive for different screen sizes 
         and compatible with different browsers. 
       </p>
-    </div>
-    <div class="project-content">
+    </article>
+    <article class="project-content">
+      <h5>2020 Demo Week - Prototype Fund</h5>
+      <p>
+        <a href="https://prototypefund.de">Prototype Fund</a> is a funding program of the
+        Federal Ministry of Education and Research (BMBF) that is managed and evaluated
+        by the <a href="https://okfn.de/en/">Open Knowledge Foundation Germany</a>. Demo Week
+        2020 by Prototype Fund was an online event showcasing different projects submitted
+        during the funding period.
+      </p>
+    </article>
+    <article class="project-content">
       <h5>Securedrop</h5>
       <p>
         Worked with the <a href="https://securedrop.org">Securedrop Team</a> to replace different
@@ -69,24 +93,23 @@
         any loss in UX at highest security of Tor browser. Worked mostly in CSS and writing Selenium
         tests.
       </p>
-    </div>
-    <div class="project-content">
+    </article>
+    <article class="project-content">
       <h5>jQuery</h5>
       <p>
         Worked actively in various refactoring and adding shadow DOM features in vanilla Javascript to
         the core jQuery codebase. Also helped in fixing bugs and issues in different modules.
       </p>
-    </div>
-    <div class="project-content">
+    </article>
+    <article class="project-content">
       <h5>Drover</h5>
       <p>
         Drover is a mobile website for organisers of events of gatherings to communicate. Worked as
         Full Stack Developer making the entire application, using Django, jQuery and PostgreSQL.
       </p>
-    </div>
-    <small>..... More to be added from the past</small>
-  </div>
+    </article>
+  </section>
 </div>
 
 {% endblock %}
-{% block footer_separator_cls %}dark{% endblock %}
+{% block footer_separator_cls %}light{% endblock %}
