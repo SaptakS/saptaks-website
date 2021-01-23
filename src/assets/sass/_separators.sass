@@ -3,10 +3,16 @@
  * https://tympanus.net/codrops/2013/10/03/a-collection-of-separator-styles/*/
 
 #bigTriangleShadow
+    @media (prefers-color-scheme: dark)
+        background: $dark-gray
 
     #trianglePath1
         fill: $light-gray
         stroke: $light-gray
+
+        @media (prefers-color-scheme: dark)
+            fill: $black
+            stroke: $black
 
     #trianglePath2
         fill: $gray
@@ -14,11 +20,11 @@
 
 #curveDownColor
     margin-bottom: -2.5em
-
-    path.dark
-        fill: $dark-gray
-        color: $dark-gray
     
     path.light
         fill: $white
         color: $white
+
+        @media (prefers-color-scheme: dark)
+            fill: $dark-gray
+            color: $dark-gray

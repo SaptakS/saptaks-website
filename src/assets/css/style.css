@@ -32,6 +32,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto Condensed", sans-serif;
   color: #303030;
   margin: 0; }
+  @media (prefers-color-scheme: dark) {
+    h1, h2, h3, h4, h5, h6 {
+      color: #ffffff; } }
 
 h1 {
   font-size: 5rem; }
@@ -49,6 +52,9 @@ h4 {
 h5 {
   font-size: 1.33rem;
   color: #737373; }
+  @media (prefers-color-scheme: dark) {
+    h5 {
+      color: #a8d4ad; } }
 
 h6 {
   font-size: 1rem; }
@@ -65,9 +71,9 @@ a {
   a:focus {
     outline: none;
     border: 2px dotted #164f6f; }
-
-.container-dark h5 {
-  color: #a8d4ad; }
+    @media (prefers-color-scheme: dark) {
+      a:focus {
+        border-color: #ffffff; } }
 
 .secondary-text {
   color: #737373; }
@@ -96,11 +102,16 @@ body {
   .containers.container-light {
     background: #d4ddd5;
     color: #000000; }
-  .containers.container-dark {
-    background: #303030;
-    color: #d4ddd5; }
-    .containers.container-dark a {
-      color: #ffffff; }
+    @media (prefers-color-scheme: dark) {
+      .containers.container-light {
+        background: #000000;
+        color: #d4ddd5; } }
+  @media (prefers-color-scheme: dark) {
+    .containers {
+      background: #303030;
+      color: #d4ddd5; }
+      .containers a {
+        color: #ffffff; } }
   .containers .content-wrapper {
     margin: 0 auto;
     max-width: 75%; }
@@ -149,6 +160,12 @@ header {
   color: #303030;
   font-family: "Aileron", sans-serif;
   font-size: 1.25rem; }
+  @media (prefers-color-scheme: dark) {
+    header {
+      background-color: #000000;
+      color: #d4ddd5; }
+      header a {
+        color: #ffffff; } }
   header h2 {
     margin: 1rem 2rem;
     margin-bottom: 0; }
@@ -184,20 +201,28 @@ header {
 /* Thanks to Mary Lou and Codrops for this code.
  * Visit the tutorial here: 
  * https://tympanus.net/codrops/2013/10/03/a-collection-of-separator-styles/ */
+@media (prefers-color-scheme: dark) {
+  #bigTriangleShadow {
+    background: #303030; } }
 #bigTriangleShadow #trianglePath1 {
   fill: #d4ddd5;
   stroke: #d4ddd5; }
+  @media (prefers-color-scheme: dark) {
+    #bigTriangleShadow #trianglePath1 {
+      fill: #000000;
+      stroke: #000000; } }
 #bigTriangleShadow #trianglePath2 {
   fill: #737373;
   stroke: #737373; }
 
 #curveDownColor {
   margin-bottom: -2.5em; }
-  #curveDownColor path.dark {
-    fill: #303030;
-    color: #303030; }
   #curveDownColor path.light {
     fill: #ffffff;
     color: #ffffff; }
+    @media (prefers-color-scheme: dark) {
+      #curveDownColor path.light {
+        fill: #303030;
+        color: #303030; } }
 
 /*# sourceMappingURL=style.css.map */

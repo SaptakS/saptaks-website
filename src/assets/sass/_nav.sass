@@ -5,6 +5,13 @@ header
     font-family: $font-family-base
     font-size: $font-size-lg
 
+    @media (prefers-color-scheme: dark)
+        background-color: $black
+        color: $light-gray
+
+        a
+            color: $white
+
     h2
         margin: 1rem 2rem
         margin-bottom: 0

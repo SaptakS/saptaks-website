@@ -2,6 +2,9 @@ h1, h2, h3, h4, h5, h6
     font-family: $font-family-condensed
     color: $dark-gray
     margin: 0
+
+    @media (prefers-color-scheme: dark)
+        color: $white
 h1
     font-size: $h1-font-size
 h2
@@ -14,6 +17,9 @@ h4
 h5
     font-size: $h5-font-size
     color: $gray
+
+    @media (prefers-color-scheme: dark)
+        color: $green
 h6
     font-size: $h6-font-size
 
@@ -32,9 +38,8 @@ a
         outline: none
         border: 2px dotted $dark-blue
 
-.container-dark
-    h5
-        color: $green
+        @media (prefers-color-scheme: dark)
+            border-color: $white
 
 .secondary-text
     color: $gray
