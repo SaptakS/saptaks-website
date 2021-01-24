@@ -1,32 +1,26 @@
 @font-face {
   font-family: "Roboto Condensed";
   src: url("../fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf");
-  src: url("../fonts/Roboto_Condensed/RobotoCondensed-Regular.otf") format("opentype"), url("../fonts/Roboto_Condensed/RobotoCondensed-Regular.woff") format("woff"), url("../fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf") format("truetype");
+  src: url("../fonts/Roboto_Condensed/RobotoCondensed-Regular.otf") format("opentype"), url("../fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal; }
 @font-face {
   font-family: "Roboto Condensed";
   src: url("../fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf");
-  src: url("../fonts/Roboto_Condensed/RobotoCondensed-Bold.otf") format("opentype"), url("../fonts/Roboto_Condensed/RobotoCondensed-Bold.woff") format("woff"), url("../fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf") format("truetype");
+  src: url("../fonts/Roboto_Condensed/RobotoCondensed-Bold.otf") format("opentype"), url("../fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal; }
 @font-face {
   font-family: "Aileron";
   src: url("../fonts/aileron.regular.ttf");
-  src: url("../fonts/aileron.regular.otf") format("opentype"), url("../fonts/aileron.regular.woff") format("woff"), url("../fonts/aileron.regular.ttf") format("truetype");
+  src: url("../fonts/aileron.regular.otf") format("opentype"), url("../fonts/aileron.regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal; }
 @font-face {
   font-family: "Aileron";
   src: url("../fonts/aileron.bold.ttf");
-  src: url("../fonts/aileron.bold.otf") format("opentype"), url("../fonts/aileron.bold.woff") format("woff"), url("../fonts/aileron.bold.ttf") format("truetype");
+  src: url("../fonts/aileron.bold.otf") format("opentype"), url("../fonts/aileron.bold.ttf") format("truetype");
   font-weight: 600;
-  font-style: normal; }
-@font-face {
-  font-family: "Arimo";
-  src: url("../fonts/Arimo/Arimo-Regular.ttf");
-  src: url("../fonts/Arimo/Arimo-Regular.otf") format("opentype"), url("../fonts/Arimo/Arimo-Regular.woff") format("woff"), url("../fonts/Arimo/Arimo-Regular.ttf") format("truetype");
-  font-weight: 400;
   font-style: normal; }
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto Condensed", sans-serif;
