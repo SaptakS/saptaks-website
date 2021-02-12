@@ -1,25 +1,21 @@
 @font-face {
   font-family: "Roboto Condensed";
-  src: url("../fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf");
-  src: url("../fonts/Roboto_Condensed/RobotoCondensed-Regular.otf") format("opentype"), url("../fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal; }
-@font-face {
-  font-family: "Roboto Condensed";
-  src: url("../fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf");
-  src: url("../fonts/Roboto_Condensed/RobotoCondensed-Bold.otf") format("opentype"), url("../fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf") format("truetype");
+  src: url("../fonts/roboto-condensed-v19-latin-700.woff") format("woff");
   font-weight: 700;
   font-style: normal; }
 @font-face {
-  font-family: "Aileron";
-  src: url("../fonts/aileron.regular.ttf");
-  src: url("../fonts/aileron.regular.otf") format("opentype"), url("../fonts/aileron.regular.ttf") format("truetype");
+  font-family: "Roboto Condensed";
+  src: url("../fonts/roboto-condensed-v19-latin-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal; }
 @font-face {
   font-family: "Aileron";
-  src: url("../fonts/aileron.bold.ttf");
-  src: url("../fonts/aileron.bold.otf") format("opentype"), url("../fonts/aileron.bold.ttf") format("truetype");
+  src: url("../fonts/Aileron-Regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: "Aileron";
+  src: url("../fonts/Aileron-Bold-webfont.woff") format("woff");
   font-weight: 600;
   font-style: normal; }
 h1, h2, h3, h4, h5, h6 {
