@@ -1,9 +1,5 @@
 {% extends "_base.html" %}
-{% block header_text %}
-<a href="/">
-  <h2>Saptak Sengupta</h2>
-</a>
-{% endblock %}
+{% set active_page = "projects" %}
 {% block content %}
 <svg 
   id="bigTriangleShadow"
@@ -16,11 +12,11 @@
 </svg>
 <div class="containers">
   <section class="content-wrapper">
-    <h4 class="text-center">
+    <h1 class="text-center page-title">
       Projects
-    </h4>
+    </h1>
     <article class="project-content">
-      <h5>Onionshare</h5>
+      <h2 class="item-title">Onionshare</h2>
       <p>
         <a href="https://onionshare.org">OnionShare</a> is an open source tool that lets you securely and 
         anonymously share a file of any size. I am working with the team on improving,
@@ -29,7 +25,7 @@
       </p>
     </article>
     <article class="project-content">
-      <h5>The A11Y Project</h5>
+      <h2 class="item-title">The A11Y Project</h2>
       <p>
         <a href="https://a11yproject.com">The A11Y Project</a> is a website catered towards various contents
         and resources related to web accessibility. "Accessibility is incredibly important, yet often
@@ -39,7 +35,7 @@
       </p>
     </article>
     <article class="project-content">
-      <h5>OONI</h5>
+      <h2 class="item-title">OONI</h2>
       <p>
         <a href="https://ooni.org">Open Observatory of Network Interference (OONI)</a> is a
         free software, global observation network for detecting censorship, surveillance and
@@ -49,7 +45,7 @@
       </p>
     </article>
     <article class="project-content">
-      <h5>Weblate</h5>
+      <h2 class="item-title">Weblate</h2>
       <p>
         <a href="https://weblate.org">Weblate</a> is a web-based continuous localization
         platform used by over 1150 libre software projects. I am working in the Weblate project
@@ -58,7 +54,7 @@
       </p>
     </article>
     <article class="project-content">
-      <h5>Bomkesh</h5>
+      <h2 class="item-title">Bomkesh</h2>
       <p>
         <a href="https://github.com/kushaldas/bomkesh">Bomkesh</a> is a tool to monitor and block your mobile
         network traffic. I am working with <a href="https://kushaldas.in">Kushal Das</a> on implementing a tool to make it easier
@@ -67,7 +63,7 @@
       </p>
     </article>
     <article class="project-content">
-      <h5>OTF Result & Impact</h5>
+      <h2 class="item-title">OTF Result & Impact</h2>
       <p>
         Worked with the <a href="https://ura.design">Ura Design Team</a> to implement the result and impacts page for 
         Open Technology Fund. Most of the work was focused towards frontend development 
@@ -76,7 +72,7 @@
       </p>
     </article>
     <article class="project-content">
-      <h5>2020 Demo Week - Prototype Fund</h5>
+      <h2 class="item-title">2020 Demo Week - Prototype Fund</h2>
       <p>
         <a href="https://prototypefund.de">Prototype Fund</a> is a funding program of the
         Federal Ministry of Education and Research (BMBF) that is managed and evaluated
@@ -86,7 +82,7 @@
       </p>
     </article>
     <article class="project-content">
-      <h5>Securedrop</h5>
+      <h2 class="item-title">Securedrop</h2>
       <p>
         Worked with the <a href="https://securedrop.org">Securedrop Team</a> to replace different
         Javascript features by CSS-only implementations so as the tool is still functional without
@@ -95,14 +91,14 @@
       </p>
     </article>
     <article class="project-content">
-      <h5>jQuery</h5>
+      <h2 class="item-title">jQuery</h2>
       <p>
         Worked actively in various refactoring and adding shadow DOM features in vanilla Javascript to
         the core jQuery codebase. Also helped in fixing bugs and issues in different modules.
       </p>
     </article>
     <article class="project-content">
-      <h5>Drover</h5>
+      <h2 class="item-title">Drover</h2>
       <p>
         Drover is a mobile website for organisers of events of gatherings to communicate. Worked as
         Full Stack Developer making the entire application, using Django, jQuery and PostgreSQL.
