@@ -2,217 +2,289 @@
   font-family: "Roboto Condensed";
   src: url("../fonts/roboto-condensed-v19-latin-700.woff") format("woff");
   font-weight: 700;
-  font-style: normal; }
+  font-style: normal;
+}
 @font-face {
   font-family: "Roboto Condensed";
   src: url("../fonts/roboto-condensed-v19-latin-regular.woff") format("woff");
   font-weight: 400;
-  font-style: normal; }
+  font-style: normal;
+}
 @font-face {
   font-family: "Aileron";
   src: url("../fonts/Aileron-Regular-webfont.woff") format("woff");
   font-weight: 400;
-  font-style: normal; }
+  font-style: normal;
+}
 @font-face {
   font-family: "Aileron";
   src: url("../fonts/Aileron-Bold-webfont.woff") format("woff");
   font-weight: 600;
-  font-style: normal; }
+  font-style: normal;
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto Condensed", sans-serif;
   color: #303030;
-  margin: 0; }
-  @media (prefers-color-scheme: dark) {
-    h1, h2, h3, h4, h5, h6 {
-      color: #ffffff; } }
+  margin: 0;
+}
+@media (prefers-color-scheme: dark) {
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+  }
+}
 
 h1 {
-  font-size: 5rem; }
+  font-size: 5rem;
+}
 
 h2 {
-  font-size: 3rem; }
+  font-size: 2rem;
+  color: #f85e23;
+}
 
 h3 {
-  font-size: 2.25rem; }
-
-h4 {
-  font-size: 2rem;
-  color: #f85e23; }
-
-h5 {
   font-size: 1.33rem;
-  color: #737373; }
-  @media (prefers-color-scheme: dark) {
-    h5 {
-      color: #a8d4ad; } }
-
-h6 {
-  font-size: 1rem; }
+  color: #737373;
+}
+@media (prefers-color-scheme: dark) {
+  h3 {
+    color: #a8d4ad;
+  }
+}
 
 p {
   font-family: "Aileron", sans-serif;
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+p.subheading {
+  font-size: 2rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  margin: 0;
+}
 
 a {
   color: #164f6f;
-  text-decoration: none; }
-  a:hover {
-    text-decoration: underline; }
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:focus {
+  outline: none;
+  border: 2px dotted #164f6f;
+}
+@media (prefers-color-scheme: dark) {
   a:focus {
-    outline: none;
-    border: 2px dotted #164f6f; }
-    @media (prefers-color-scheme: dark) {
-      a:focus {
-        border-color: #ffffff; } }
+    border-color: #ffffff;
+  }
+}
 
 .secondary-text {
-  color: #737373; }
+  color: #737373;
+}
 
 .upper-case {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+}
 
 .flex {
-  display: flex; }
+  display: flex;
+}
 
 .containers {
   padding: 3rem 0;
   background: #ffffff;
-  color: #303030; }
-  .containers h4 {
-    margin-bottom: 4rem; }
-  .containers.intro {
-    padding: 3.75rem 0; }
+  color: #303030;
+}
+.containers h4 {
+  margin-bottom: 4rem;
+}
+.containers.intro {
+  padding: 3.75rem 0;
+}
+.containers.container-light {
+  background: #d4ddd5;
+  color: #000000;
+}
+@media (prefers-color-scheme: dark) {
   .containers.container-light {
-    background: #d4ddd5;
-    color: #000000; }
-    @media (prefers-color-scheme: dark) {
-      .containers.container-light {
-        background: #000000;
-        color: #d4ddd5; } }
-  @media (prefers-color-scheme: dark) {
-    .containers {
-      background: #303030;
-      color: #d4ddd5; }
-      .containers a {
-        color: #ffffff; } }
+    background: #000000;
+    color: #d4ddd5;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .containers {
+    background: #303030;
+    color: #d4ddd5;
+  }
+  .containers a {
+    color: #ffffff;
+  }
+}
+.containers .content-wrapper {
+  margin: 0 auto;
+  max-width: 75%;
+}
+@media (min-width: 1900px) {
   .containers .content-wrapper {
-    margin: 0 auto;
-    max-width: 75%; }
-    @media (min-width: 1900px) {
-      .containers .content-wrapper {
-        max-width: 60%; } }
-  .containers .project-content p {
-    margin-top: 0.5rem;
-    margin-bottom: 1.5rem; }
+    max-width: 60%;
+  }
+}
+.containers .project-content p {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
 
 footer.containers {
   padding-bottom: 1.5rem;
   padding-top: 0;
-  margin-top: auto; }
+  margin-top: auto;
+}
 
 .text-center {
-  text-align: center; }
+  text-align: center;
+}
 
 .hidden {
-  display: none; }
+  display: none;
+}
 
 @media (max-width: 720px) {
   html {
-    font-size: 12px; }
+    font-size: 12px;
+  }
 
   .flex {
-    display: block; } }
+    display: block;
+  }
+}
 @media (min-width: 900px) {
   .shape-outside-left {
     float: left;
     shape-outside: url(/assets/images/about.png);
-    width: 500px; } }
+    width: 500px;
+  }
+}
 .content-wrapper img {
-  max-width: 200px; }
+  max-width: 200px;
+}
 
 #iamspiderman .content-wrapper img {
   width: 430px;
-  max-width: none; }
+  max-width: none;
+}
 
 @media (max-width: 720px) {
   #iamspiderman .content-wrapper img {
-    max-width: 200px; } }
+    max-width: 200px;
+  }
+}
 header {
   display: flex;
   background-color: #d4ddd5;
   color: #303030;
   font-family: "Aileron", sans-serif;
-  font-size: 1.25rem; }
-  @media (prefers-color-scheme: dark) {
-    header {
-      background-color: #000000;
-      color: #d4ddd5; }
-      header a {
-        color: #ffffff; } }
+  font-size: 1.25rem;
+}
+@media (prefers-color-scheme: dark) {
+  header {
+    background-color: #000000;
+    color: #d4ddd5;
+  }
+  header a {
+    color: #ffffff;
+  }
+}
+header h2 {
+  margin: 1rem 2rem;
+  margin-bottom: 0;
+}
+@media (max-width: 514px) {
   header h2 {
-    margin: 1rem 2rem;
-    margin-bottom: 0; }
-    @media (max-width: 514px) {
-      header h2 {
-        font-size: 2.25rem; } }
-  header .menu-toggle {
-    display: none; }
-  header nav {
-    margin-left: auto;
-    max-width: 80%; }
-    header nav ul {
-      display: flex; }
-      header nav ul li {
-        list-style: none;
-        margin: 0 1.5rem; }
-        header nav ul li a {
-          text-decoration: none;
-          font-family: "Aileron", sans-serif;
-          font-size: 1.25rem; }
+    font-size: 1.33rem;
+  }
+}
+header .menu-toggle {
+  display: none;
+}
+header nav {
+  margin-left: auto;
+  max-width: 80%;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  list-style: none;
+  margin: 0 1.5rem;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-family: "Aileron", sans-serif;
+  font-size: 1.25rem;
+}
 
 .ratings {
-  display: flex; }
-  .ratings span {
-    width: 5px;
-    height: 2px; }
-    .ratings span .filled {
-      background-color: #303030; }
-    .ratings span .empty {
-      background-color: #d4ddd5;
-      border: #303030 1px solid; }
+  display: flex;
+}
+.ratings span {
+  width: 5px;
+  height: 2px;
+}
+.ratings span .filled {
+  background-color: #303030;
+}
+.ratings span .empty {
+  background-color: #d4ddd5;
+  border: #303030 1px solid;
+}
 
-/* Thanks to Mary Lou and Codrops for this code.
- * Visit the tutorial here: 
- * https://tympanus.net/codrops/2013/10/03/a-collection-of-separator-styles/ */
+/* Thanks to Mary Lou and Codrops for this code. 
+ * * Visit the tutorial here: 
+ * * https://tympanus.net/codrops/2013/10/03/a-collection-of-separator-styles/*/
 @media (prefers-color-scheme: dark) {
   #bigTriangleShadow {
-    background: #303030; } }
+    background: #303030;
+  }
+}
 #bigTriangleShadow #trianglePath1 {
   fill: #d4ddd5;
-  stroke: #d4ddd5; }
-  @media (prefers-color-scheme: dark) {
-    #bigTriangleShadow #trianglePath1 {
-      fill: #000000;
-      stroke: #000000; } }
+  stroke: #d4ddd5;
+}
+@media (prefers-color-scheme: dark) {
+  #bigTriangleShadow #trianglePath1 {
+    fill: #000000;
+    stroke: #000000;
+  }
+}
 #bigTriangleShadow #trianglePath2 {
   fill: #737373;
-  stroke: #737373; }
+  stroke: #737373;
+}
 
 #curveDownColor {
-  margin-bottom: -2.5em; }
+  margin-bottom: -2.5em;
+}
+#curveDownColor path.light {
+  fill: #ffffff;
+  color: #ffffff;
+}
+@media (prefers-color-scheme: dark) {
   #curveDownColor path.light {
-    fill: #ffffff;
-    color: #ffffff; }
-    @media (prefers-color-scheme: dark) {
-      #curveDownColor path.light {
-        fill: #303030;
-        color: #303030; } }
+    fill: #303030;
+    color: #303030;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

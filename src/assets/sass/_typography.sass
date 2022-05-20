@@ -9,23 +9,24 @@ h1
     font-size: $h1-font-size
 h2
     font-size: $h2-font-size
+    color: $orange
 h3
     font-size: $h3-font-size
-h4
-    font-size: $h4-font-size
-    color: $orange
-h5
-    font-size: $h5-font-size
     color: $gray
 
     @media (prefers-color-scheme: dark)
         color: $green
-h6
-    font-size: $h6-font-size
 
 p
     font-family: $font-family-base
     font-size: $font-size-lg
+    line-height: 1.5
+
+p.subheading
+    font-size: $h2-font-size
+    font-family: $font-family-condensed
+    font-weight: bold
+    margin: 0
 
 a
     color: $dark-blue
