@@ -39,12 +39,11 @@ a
     &:hover
         text-decoration: underline
 
-    &:focus
-        outline: none
-        border: 2px dotted $dark-blue
+    &:focus-visible
+        outline: 2px dashed $dark-blue
 
         @media (prefers-color-scheme: dark)
-            border-color: $white 
+            outline-color: $white 
 
 
 .secondary-text

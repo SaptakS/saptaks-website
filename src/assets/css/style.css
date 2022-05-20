@@ -77,13 +77,12 @@ a {
 a:hover {
   text-decoration: underline;
 }
-a:focus {
-  outline: none;
-  border: 2px dotted #164f6f;
+a:focus-visible {
+  outline: 2px dashed #164f6f;
 }
 @media (prefers-color-scheme: dark) {
-  a:focus {
-    border-color: #ffffff;
+  a:focus-visible {
+    outline-color: #ffffff;
   }
 }
 
