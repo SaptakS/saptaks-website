@@ -39,15 +39,21 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  color: #f85e23;
 }
 
 h3 {
   font-size: 1.33rem;
-  color: #737373;
+}
+
+.page-title {
+  margin-bottom: 2.5rem;
+}
+
+.item-title {
+  color: #f85e23;
 }
 @media (prefers-color-scheme: dark) {
-  h3 {
+  .item-title {
     color: #a8d4ad;
   }
 }
@@ -57,7 +63,6 @@ p {
   font-size: 1.25rem;
   line-height: 1.5;
 }
-
 p.subheading {
   font-size: 2rem;
   font-family: "Roboto Condensed", sans-serif;
@@ -233,6 +238,9 @@ header nav ul li a {
   text-decoration: none;
   font-family: "Aileron", sans-serif;
   font-size: 1.25rem;
+}
+header nav ul li a[aria-current=page] {
+  text-decoration: underline;
 }
 
 .ratings {

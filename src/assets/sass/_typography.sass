@@ -9,10 +9,14 @@ h1
     font-size: $h1-font-size
 h2
     font-size: $h2-font-size
-    color: $orange
 h3
     font-size: $h3-font-size
-    color: $gray
+
+.page-title
+    margin-bottom: 2.5rem
+
+.item-title
+    color: $orange
 
     @media (prefers-color-scheme: dark)
         color: $green
@@ -22,11 +26,11 @@ p
     font-size: $font-size-lg
     line-height: 1.5
 
-p.subheading
-    font-size: $h2-font-size
-    font-family: $font-family-condensed
-    font-weight: bold
-    margin: 0
+    &.subheading
+        font-size: $h2-font-size
+        font-family: $font-family-condensed
+        font-weight: bold
+        margin: 0
 
 a
     color: $dark-blue
@@ -40,7 +44,8 @@ a
         border: 2px dotted $dark-blue
 
         @media (prefers-color-scheme: dark)
-            border-color: $white
+            border-color: $white 
+
 
 .secondary-text
     color: $gray
