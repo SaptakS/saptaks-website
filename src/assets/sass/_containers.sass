@@ -27,12 +27,16 @@ body
             background: $black
             color: $light-gray
 
+    &:not(.container-light) a
+        color: $blue
+
+        @media (prefers-color-scheme: dark)
+            a
+                color: $light-blue
+
     @media (prefers-color-scheme: dark)
         background: $dark-gray
         color: $light-gray
-
-        a
-            color: $white
 
     .content-wrapper
         margin: 0 auto

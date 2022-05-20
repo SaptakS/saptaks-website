@@ -128,13 +128,18 @@ body {
     color: #d4ddd5;
   }
 }
+.containers:not(.container-light) a {
+  color: #1a21ff;
+}
+@media (prefers-color-scheme: dark) {
+  .containers:not(.container-light) a a {
+    color: #a8aaff;
+  }
+}
 @media (prefers-color-scheme: dark) {
   .containers {
     background: #303030;
     color: #d4ddd5;
-  }
-  .containers a {
-    color: #ffffff;
   }
 }
 .containers .content-wrapper {
