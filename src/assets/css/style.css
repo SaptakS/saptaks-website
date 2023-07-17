@@ -74,6 +74,11 @@ a {
   color: #164f6f;
   text-decoration: none;
 }
+@media (prefers-color-scheme: dark) {
+  a {
+    color: #a8aaff;
+  }
+}
 a:hover {
   text-decoration: underline;
 }
@@ -131,7 +136,7 @@ body {
   color: #1a21ff;
 }
 @media (prefers-color-scheme: dark) {
-  .containers:not(.container-light) a a {
+  .containers:not(.container-light) a {
     color: #a8aaff;
   }
 }
@@ -173,7 +178,6 @@ footer.containers {
   html {
     font-size: 12px;
   }
-
   .flex {
     display: block;
   }

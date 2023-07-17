@@ -36,6 +36,9 @@ a
     color: $dark-blue
     text-decoration: none
 
+    @media (prefers-color-scheme: dark)
+        color: $light-blue
+
     &:hover
         text-decoration: underline
 
@@ -43,7 +46,7 @@ a
         outline: 2px dashed $dark-blue
 
         @media (prefers-color-scheme: dark)
-            outline-color: $white 
+            outline-color: $white
 
 
 .secondary-text
