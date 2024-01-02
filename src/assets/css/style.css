@@ -72,7 +72,6 @@ p.subheading {
 
 a {
   color: #164f6f;
-  text-decoration: none;
 }
 @media (prefers-color-scheme: dark) {
   a {
@@ -80,7 +79,7 @@ a {
   }
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration-thickness: 3px;
 }
 a:focus-visible {
   outline: 2px dashed #164f6f;
